@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+    <title>Pizza Order Form</title>
+</head>
+
+<body>
+
+    <div class="content">
+        <h2> Pizza Order Form</h2>
+        <form>
+
+            <div class="first mb-3">
+                <div class="name">
+                    <h6> <label for="Name">Name :</label></h6>
+                    <input type="Name" name="name" class="form-control" id="name" placeholder="Enter Your Name Here"
+                        required>
+                </div>
+                <br><br>
+
+                <div class="email">
+                    <h6> <label for="email">Email ID :</label></h6>
+                    <input type="email" name="email" class="form-control" id="email" placeholder="Enter Your Email Here"
+                        required>
+                </div><br><br>
+
+                <div class="phNo">
+
+                    <h6> <label for="phNo">Phone Number :</label> </h6>
+                    <div class="phoneclass">
+                        <input name="91" value="+91" class="form-control" disabled readonly id="code">
+                        <input id="phone" class="form-control" name="phoneNo" type="number" required>
+                    </div>
+                </div><br>
+            </div>
+
+            <div class="pizza" >
+                <h6><label for="pizza">Pizza :</label></h6>
+                <input type="radio" name="same" class="form-check-input" value="Simply Veg"> &nbsp;<b>Simply Veg</b>
+                &nbsp;
+                <input type="radio" name="same" class="form-check-input" value="Veg Supreme"> &nbsp; <b>Veg Supreme</b>
+                &nbsp;
+                <input type="radio" name="same" class="form-check-input" value="Veg Delight"> &nbsp;<b>Veg Delight</b>
+                &nbsp;
+            </div>
+            <br><br>
+
+            <div class="pizzaSize">
+                <h6> <label for="psize">Pizza Size :</label></h6>
+                <input type="radio" name="same2" class="form-check-input" value="Personal Pan">&nbsp;<b>Personal Pan
+                </b>&nbsp;
+                <input type="radio" name="same2" class="form-check-input" value="Medium"> &nbsp;<b>Medium</b>
+                &nbsp;&nbsp;&nbsp;
+                <input type="radio" name="same2" class="form-check-input" value="Large"> &nbsp;<b>Large</b> &nbsp;
+            </div>
+            <br><br>
+
+            <div class="crust">
+                <h6> <label value="">Crust :</label> </h6>
+                <input type="radio" name="same3" class="form-check-input" value="Thin"> &nbsp; <b>Thin </b>
+                &nbsp;&nbsp;&nbsp;
+                <input type="radio" name="same3" class="form-check-input" value="Normal"> &nbsp; <b>Normal</b>
+                &nbsp;&nbsp;&nbsp;
+                <input type="radio" name="same3" class="form-check-input" value="Special"> &nbsp;<b> Special </b> &nbsp;
+            </div>
+            <br><br>
+
+            <h6><label value="">Payment :</label></h6>
+            <select name="payment" id="payment" class="form-select" required>
+                <option value="">Select a Payment Option</option>
+                <option value="cod">Cash On Delivery</option>
+                <option value="Credit">Credit Card</option>
+                <option value="Debit">Debit Card</option>
+                <option value="Paytm">Paytm</option>
+
+            </select>
+            <br><br>
+
+            <div class="discount">
+                <h6> <label for="discount">Discount Code :</label></h6>
+                <input name="discount" type="text" class="form-control" id="discount">
+            </div>
+            <br><br>
+
+            <input type="checkbox" id="agree" value="agree" class="form-check-input" required>
+            <b>I Agree to all the <strong>Terms & Conditions</strong>
+            </b> <br><br>
+
+
+
+            <button type="submit" class="btn btn-primary container" id="btn">Submit</button>
+
+        </form>
+        <br>
+
+        <button onclick="viewDetails()" class="btn btn-info container ">View Details</button>
+        <br>
+        <div class="card" id="view"></div>
+
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html>

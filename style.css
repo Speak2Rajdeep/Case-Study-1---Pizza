@@ -1,0 +1,58 @@
+body{
+    text-align: center;
+    background-image:url("https://img.onmanorama.com/content/dam/mm/en/food/features/images/2021/10/17/pizza.jpg") ;
+    background-size: cover;
+    
+}
+label{
+    color: black;
+}
+h2{
+    text-align: center;
+}
+.form-check-input{
+    margin-left: 40px;
+}
+
+.content{
+background-color: white;
+opacity: 0.9;
+width: 70%;
+margin: 30px auto;
+padding: 30px ;
+border-radius: 10px;
+font-weight: 200;
+}
+
+#view{
+    padding: 10px;
+    margin-top: 40px;
+    width: 100%;
+    display: none;
+}
+input{
+    
+}
+.form-control, select{
+    border-right: 2px solid blue !important;
+    border-top: 2px solid blue !important;
+}
+  
+#phone{
+   
+    width:100%;
+    
+}
+#code{
+    text-align: center;
+    width: 80%;
+}
+
+#text{
+    margin-left: 10px;
+}
+
+.phoneclass{
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+}
